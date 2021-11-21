@@ -1,3 +1,7 @@
+:root {
+    --acc-color: #f76d6d;
+}
+
 .header-img {
     background-image: url("https://picsum.photos/900/500");
     background-repeat: no-repeat;
@@ -11,8 +15,28 @@
     background-color: #0c172b;
 }
 
+.bg-acc {
+    background-color: var(--acc-color);
+}
+
 .navbar-collapse {
     flex-grow: unset;
+}
+
+.vh-75 {
+    min-height: 75vh;
+}
+
+.vh-65 {
+    min-height: 65vh;
+}
+
+.vh-60 {
+    min-height: 60vh;
+}
+
+.vh-50 {
+    min-height: 50vh;
 }
 
 .nav-link {
@@ -23,15 +47,9 @@
     font-size: 10vh;
 }
 
-.btn-cs {
+.white {
     color: white;
-    background-color: #0d6efd;
 }
-
-.wide-cs {
-    height: 200vh;
-}
-
 .calendar {
     color: #fff;
     background: #04b6e2;

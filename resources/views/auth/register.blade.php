@@ -8,7 +8,7 @@
       </ul>
     </div>
     @endif
-    <div class="container-fluid mt-5 h-custom">
+    <div class="container-fluid mt-5 vh-65">
       <div class="row mx-auto justify-content-center">
         <div class="col-12 col-md-6">
           <form method="POST" action="{{route('register')}}">

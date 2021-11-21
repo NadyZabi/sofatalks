@@ -16,5 +16,6 @@ use App\Http\Controllers\TopicController;
 */
 
 Route::get('/', [PublicController::class, 'home'])->name('home');
+Route::get('/about', [PublicController::class, 'about'])->name('about');
 Route::get('/topic/create', [TopicController::class, 'create'])->name('newTopic');
 Route::post('/topic/store', [TopicController::class, 'store'])->name('storeTopic');

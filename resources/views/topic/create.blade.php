@@ -1,5 +1,5 @@
 <x-layout>
-    <div class="container">
+    <div class="container vh-75 ">
         <div class="row">
             <div class="col-12 col-md-6 offset-md-3 mt-5">
                 <h1>Suggest a topic</h1>
