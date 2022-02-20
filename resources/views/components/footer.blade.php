@@ -1,4 +1,4 @@
-<div class="container-fluid bg-nav py-3">
+<div class="container-fluid bg-nav py-3 mt-auto">
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 mt-4 border-top">
      
         <span class="text-white">© 2021 Company, Inc</span>

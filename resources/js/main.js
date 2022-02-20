@@ -1,4 +1,4 @@
-function CalendarApp(date) {
+/* function CalendarApp(date) {
   
     if (!(date instanceof Date)) {
       date = new Date();
@@ -43,7 +43,7 @@ function CalendarApp(date) {
     this.dayEventBoxEle = document.getElementById("add-day-event-box");
     
     /* Start the app */
-    this.showView(date);
+   /*  this.showView(date);
     this.addEventListeners();
     this.todayIsSpan.textContent = "Today is " + this.months[date.getMonth()] + " " + date.getDate();  
   }
@@ -154,7 +154,7 @@ function CalendarApp(date) {
     this.dayViewEle.classList.add("calendar--day-view-active");
     
     /* Contextual lang changes based on tense. Also show btn for scheduling future events */
-    var _dayTopbarText = '';
+   /*  var _dayTopbarText = '';
     if ( day < new Date(now.getFullYear(), now.getMonth(), now.getDate())) {
       _dayTopbarText = "had ";
       this.addDayEventEle.style.display = "none";
@@ -213,8 +213,26 @@ function CalendarApp(date) {
     this.showView(newMonthDate);
     this.closeDayWindow();
     return true;
-  };
+  }; 
   
-  var calendar = new CalendarApp();
-  
-  
+  var calendar = new CalendarApp(); */
+
+$(document).ready(function(){
+  $('.approve-btn').on('click', function(){
+    let id = $(this).attr('data-topic-id');
+    $.ajax({
+      method: 'POST',
+      headers: {'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')},
+      url:'admin/accept-topic',
+      data:{'id': id},
+      success: function(){
+        console.log('approved');
+      },
+      error: function(){
+        console.log('error');
+      }
+      
+
+    })
+  })
+})
